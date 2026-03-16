@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="tictactoe2.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Tic Tac Toe</h1>
+        <div class="top-controls">
+            <button id="themeBtn">Cyber Mode</button>
+            <select id="mode">
+                <option value="pvp">Player vs Player</option>
+                <option value="ai">Player vs AI (you = X)</option>
+            </select>
+        </div>
+    </header>
+
+    <section class="scoreboard">
+        <p>X Wins: <span id="x-score">0</span></p>
+        <p>O Wins: <span id="o-score">0</span></p>
+        <p>Draws: <span id="draw-score">0</span></p>
+    </section>
+
+    <h2 id="turn">X starts – your turn</h2>
+
+    <div id="msg-container" class="hide">
+        <p id="msg"></p>
+    </div>
+
+    <div class="container">
+        <div class="game">
+            <button class="box" data-index="0"></button>
+            <button class="box" data-index="1"></button>
+            <button class="box" data-index="2"></button>
+            <button class="box" data-index="3"></button>
+            <button class="box" data-index="4"></button>
+            <button class="box" data-index="5"></button>
+            <button class="box" data-index="6"></button>
+            <button class="box" data-index="7"></button>
+            <button class="box" data-index="8"></button>
+        </div>
+    </div>
+
+    <div class="controls">
+        <button id="new-game">New Game</button>
+        <button id="reset-btn">Restart</button>
+    </div>
+
+    <canvas id="confetti"></canvas>
+
+    <script src="tictactoe2.js"></script>
+</body>
+
+</html>
